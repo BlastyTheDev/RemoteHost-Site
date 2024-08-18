@@ -1,2 +1,2 @@
 # RemoteHost-Site
-The frontend of RemoteHost
+The frontendof [RemoteHost](https://github.com/BlastyTheDev/RemoteHost).
