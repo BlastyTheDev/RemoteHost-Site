@@ -1,4 +1,4 @@
-const { URL, setRememberMe } = require("./global");
+import { URL, setRememberMe } from './global.js';
 
 const usernameInput = document.getElementById('username-input');
 const passwordInput = document.getElementById('password-input');
@@ -11,6 +11,7 @@ loginButton.addEventListener('click', () => {
 
     fetch(URL + 'api/v1/auth/login', {
         method: 'POST',
+        credentials: 'include',
         headers: {
             'Content-Type': 'application/json'
         },

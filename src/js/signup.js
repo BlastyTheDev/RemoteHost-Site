@@ -1,4 +1,4 @@
-const { URL } = require("./global");
+import { URL } from './global.js';
 
 const usernameInput = document.getElementById('username-input');
 const discordInput = document.getElementById('discord-input');
@@ -13,6 +13,7 @@ signupButton.addEventListener('click', () => {
 
     fetch(URL + 'api/v1/auth/signup', {
         method: 'POST',
+        credentials: 'include',
         headers: {
             'Content-Type': 'application/json'
         },

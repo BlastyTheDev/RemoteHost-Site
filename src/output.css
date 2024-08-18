@@ -562,6 +562,15 @@ video {
   inset: 0px;
 }
 
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
 .m-\[2\.0625rem\] {
   margin: 2.0625rem;
 }
@@ -570,59 +579,14 @@ video {
   margin: auto;
 }
 
-.mx-\[3\.5rem\] {
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
-}
-
-.mx-\[3\.75rem\] {
-  margin-left: 3.75rem;
-  margin-right: 3.75rem;
-}
-
-.mx-\[3\.8rem\] {
-  margin-left: 3.8rem;
-  margin-right: 3.8rem;
-}
-
-.mx-\[3\.9rem\] {
-  margin-left: 3.9rem;
-  margin-right: 3.9rem;
-}
-
-.mx-\[3\.95rem\] {
-  margin-left: 3.95rem;
-  margin-right: 3.95rem;
-}
-
-.mx-\[3\.925rem\] {
-  margin-left: 3.925rem;
-  margin-right: 3.925rem;
-}
-
-.mx-\[3\.9275rem\] {
-  margin-left: 3.9275rem;
-  margin-right: 3.9275rem;
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .mx-\[3\.928rem\] {
   margin-left: 3.928rem;
   margin-right: 3.928rem;
-}
-
-.mx-\[4\.25rem\] {
-  margin-left: 4.25rem;
-  margin-right: 4.25rem;
-}
-
-.mx-\[4\.5rem\] {
-  margin-left: 4.5rem;
-  margin-right: 4.5rem;
-}
-
-.mx-\[4\.6rem\] {
-  margin-left: 4.6rem;
-  margin-right: 4.6rem;
 }
 
 .mx-\[4\.55rem\] {
@@ -634,12 +598,24 @@ video {
   margin-bottom: 0px;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .ml-10 {
   margin-left: 2.5rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
+.ml-\[17\.5rem\] {
+  margin-left: 17.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-4 {
@@ -650,48 +626,44 @@ video {
   margin-top: 2rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
+.mt-\[5\.5rem\] {
+  margin-top: 5.5rem;
 }
 
-.ml-12 {
-  margin-left: 3rem;
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
-.ml-\[3\.25rem\] {
-  margin-left: 3.25rem;
+.flex {
+  display: flex;
 }
 
-.ml-\[3\.5rem\] {
-  margin-left: 3.5rem;
-}
-
-.h-\[17\.125rem\] {
-  height: 17.125rem;
-}
-
-.h-\[2\.5rem\] {
-  height: 2.5rem;
-}
-
-.h-\[20\.625rem\] {
-  height: 20.625rem;
-}
-
-.h-\[21\.625rem\] {
-  height: 21.625rem;
-}
-
-.h-\[21\.125rem\] {
-  height: 21.125rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-\[17\.625rem\] {
   height: 17.625rem;
 }
 
+.h-\[2\.5rem\] {
+  height: 2.5rem;
+}
+
+.h-\[21\.125rem\] {
+  height: 21.125rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .max-h-screen {
   max-height: 100vh;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .w-\[16\.563rem\] {
@@ -710,6 +682,14 @@ video {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .rounded-lg {
@@ -748,6 +728,10 @@ video {
   padding: 0.625rem;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .font-lexend-exa {
   font-family: Lexend Exa, sans-serif;
 }
@@ -755,6 +739,16 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-\[\#000000\] {
@@ -765,18 +759,6 @@ video {
 .text-text-primary {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-sm {
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg {
@@ -791,8 +773,24 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-bg-accent {
   --tw-shadow-color: #0f1011;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-bg-secondary {
+  --tw-shadow-color: #36383b;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-bg-primary {
+  --tw-shadow-color: #222325;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
