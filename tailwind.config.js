@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     fontFamily: {
       "lexend-exa": ["Lexend Exa", "sans-serif"],
-      "popins": ["Poppins", "sans-serif"],
+      "poppins": ["Poppins", "sans-serif"],
+      "cascadia-code": ["Cascadia Code", "monospace"],
     },
     extend: {},
     colors: {
