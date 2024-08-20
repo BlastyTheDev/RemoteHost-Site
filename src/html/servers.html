@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Console | RemoteHost</title>
+    <title>Servers | RemoteHost</title>
     <link href="../output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../cascadiacode.css">
     <script defer type="module" src="../js/global.js"></script>
-    <script defer type="module" src="../js/console.js"></script>
+    <script defer type="module" src="../js/servers.js"></script>
 </head>
 <body class="bg-bg-primary text-text-primary font-poppins select-none antialiased">
-    <div class="fixed inset-x-0 mx-3 mt-3 bg-bg-secondary h-16 rounded-xl shadow-lg shadow-bg-accent">
+    <div class="fixed inset-0 mx-3 mt-3 bg-bg-secondary h-16 rounded-xl shadow-lg shadow-bg-accent">
         <a href="dash.html" class="inline-block w-[14.666666667rem] h-12 mx-[0.666666667rem] my-[0.5rem] rounded
         text-3xl leading-[3rem] indent-2 font-bold">RemoteHost</a>
     </div>
 
     <div class="fixed inset-0 bg-bg-secondary m-3 mt-[5.5rem] w-64 rounded-xl shadow-lg shadow-bg-accent">
-        <a href="dash.html" class="inline-block w-11/12 h-12 mx-[0.666666667rem] mt-[0.666666667rem] rounded
+        <a href="dash.html" class="inline-block w-11/12 h-12 mx-[0.666666667rem] mt-[0.666666667rem] rounded`
         text-xl leading-[3rem] indent-14"><img src="../resources/house-solid.svg" class="absolute w-4 h-4 m-4 mr-0">Dashboard</a>
 
-        <a href="servers.html" class="inline-block w-11/12 h-12 mx-[0.666666667rem] mt-[0.666666667rem] rounded
+        <a href="" class="inline-block w-11/12 h-12 mx-[0.666666667rem] mt-[0.666666667rem] rounded bg-highlight
         text-xl leading-[3rem] indent-14"><img src="../resources/server-solid.svg" class="absolute w-4 h-4 m-4 mr-0">Servers</a>
 
-        <a href="" class="inline-block w-11/12 h-12 mx-[0.666666667rem] mt-[0.666666667rem] rounded bg-highlight
+        <a href="console.html" class="inline-block w-11/12 h-12 mx-[0.666666667rem] mt-[0.666666667rem] rounded
         text-xl leading-[3rem] indent-14"><img src="../resources/terminal-solid.svg" class="absolute w-4 h-4 m-4 mr-0">Console</a>
 
         <a href="" class="inline-block w-11/12 h-12 mx-[0.666666667rem] mt-[0.666666667rem] rounded
@@ -39,16 +38,21 @@
         text-xl leading-[3rem] indent-14"><img src="../resources/right-from-bracket-solid.svg" class="absolute w-4 h-4 m-4 mr-0">Log Out</a>
     </div>
 
-    <main class="fixed inset-0 mt-[5.5rem] ml-[17.5rem] mr-3 mb-3 rounded-lg p-4">
-        <h1 class="text-4xl text-text-secondary">Viewing console of <span id="server-name" class="text-text-primary"></span></h1>
+    <main class="mt-[5.5rem] ml-[17.5rem] mb-3 rounded-lg flex flex-wrap overflow-auto">
+        <div class="inset-0 w-[32rem] h-72 bg-bg-secondary shadow-lg shadow-bg-accent mr-3 mb-3 rounded-xl">
+            <img src="" class="bg-bg-primary w-32 h-32 m-3 rounded">
+                <div class="ml-[9.5rem] mt-[-8.8rem]">
+                <h1 class="text-2xl">Server Name</h1>
+                <h2 class="text-lg mb-3">server.address:port</h2>
+                <h2 class="text-lg">Offline</h2>
+                <h3 class="w-fit indent-6">30 / 48</h3>
+                <img src="../resources/user-solid.svg" class="w-4 h-4 mt-[-1.3rem]">
+            </div>
 
-        <div class="fixed grid inset-0 ml-[17.5rem] mr-3 mb-3 mt-44 bg-bg-accent rounded-xl shadow-lg shadow-bg-accent">
-            <textarea id="console-window" spellcheck="false" disabled
-            class="bg-bg-accent bg-opacity-0 rounded-lg font-cascadia-code p-3 pb-0 inset-y-0 mb-[4.75rem] resize-none"></textarea>
-
-            <div class="self-end ml-[18.25rem] mr-6 mb-3 h-12 max-w-full inset-x-0 fixed bg-bg-primary rounded shadow shadow-bg-primary outline-none font-cascadia-code">
-                <input type="text" id="console-input" class="bg-bg-primary p-3 absolute bg-opacity-0 inset-0 mr-12 h-full rounded outline-none">
-                <img id="send-button" src="../resources/circle-arrow-up-solid.svg" class="w-12 h-12 p-3 inset-0 float-right" style="filter: brightness(30%);">
+            <div class="mt-28 mx-3">
+                <img src="../resources/circle-play-solid.svg" class="w-8 h-8 absolute hover:cursor-pointer">
+                <img src="../resources/circle-stop-solid.svg" class="w-8 h-8 absolute ml-10 hover:cursor-pointer">
+                <img src="../resources/gear-solid.svg" class="w-[1.25rem] h-[1.25rem] mt-2 float-right hover:cursor-pointer">
             </div>
         </div>
     </main>
