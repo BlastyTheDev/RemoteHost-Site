@@ -14,7 +14,7 @@ module.exports = {
       "bg-accent": "#0f1011",
       "highlight": "#5d6069",
       "text-primary": "#ffffff",
-      "text-seconary": "#cfcdcd",
+      "text-secondary": "#cfcdcd",
     }
   },
   plugins: [],
